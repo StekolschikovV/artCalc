@@ -1,4 +1,4 @@
-$( '.sendGet' ).click(function () {
+$('.sendGet').click(function () {
 	var TOTAL_PAINTING = parseInt($('#TOTAL_PAINTING_ID').val());
 	var furnituraSelect = $("#TYPE_BAFFLE_ID").val();
 	var Allheight = $('#HIGHT_SETS_ID').val();
@@ -108,55 +108,55 @@ $( '.sendGet' ).click(function () {
 	var furnituraNameStr = '';
 	if (furnituraSelect == 1) {
 		// var slidingMechanisms = '&slidingMechanisms=' + $( '.razdvizhnyie-mehanizmyi select' ).val();
-		var slidingMechanisms = '&slidingMechanisms=' + $(".razdvizhnyie-mehanizmyi option:selected").text();
+		var slidingMechanisms = '&slidingMechanisms=' + $(".razdvizhnyie-mehanizmyi option:selected").html();
 		// var synchronizationMechanism = '&synchronizationMechanism=' + $( '.mehanizm-sinhronizatsii select' ).val();
-		var synchronizationMechanism = '&synchronizationMechanism=' + $(".mehanizm-sinhronizatsii option:selected").text();
+		var synchronizationMechanism = '&synchronizationMechanism=' + $(".mehanizm-sinhronizatsii option:selected").html();
 		// var runners = '&runners=' + $( '.napravlyayuschie select' ).val();
-		var runners = '&runners=' + $(".napravlyayuschie option:selected").text();
+		var runners = '&runners=' + $(".napravlyayuschie option:selected").html();
 		// var runnersCount = '&runnersCount=' + $( '.napravlyayuschie input' ).val();
-		var runnersCount = '&runnersCount=' + $(".napravlyayuschie option:selected").text();
+		var runnersCount = '&runnersCount=' + $(".napravlyayuschie option:selected").html();
 		// var typeOfMountingRunners = '&typeOfMountingRunners=' + $( '.vidKrepleniyaNapravlyayuschey select' ).val();
-		var typeOfMountingRunners = '&typeOfMountingRunners=' + $(".vidKrepleniyaNapravlyayuschey option:selected").text();
+		var typeOfMountingRunners = '&typeOfMountingRunners=' + $(".vidKrepleniyaNapravlyayuschey option:selected").html();
 		// var lead = '&lead=' + $( '.povodok select' ).val();
-		var lead = '&lead=' + $(".povodok option:selected").text();
+		var lead = '&lead=' + $(".povodok option:selected").html();
 		// var closers = '&closers=' + $( '.dovodchik select' ).val();
-		var closers = '&closers=' + $(".dovodchik option:selected").text();
+		var closers = '&closers=' + $(".dovodchik option:selected").html();
 		// var coverStripForProfile = '&coverStripForProfile=' + $( '.dekorativnayaPlankaDlyaProfilya select' ).val();
-		var coverStripForProfile = '&coverStripForProfile=' + $(".dekorativnayaPlankaDlyaProfilya option:selected").text();
+		var coverStripForProfile = '&coverStripForProfile=' + $(".dekorativnayaPlankaDlyaProfilya option:selected").html();
 		// var brushSeal = '&brushSeal=' + $( '.schetochnyiyUplotnitel select' ).val();
-		var brushSeal = '&brushSeal=' + $(".schetochnyiyUplotnitel option:selected").text();
+		var brushSeal = '&brushSeal=' + $(".schetochnyiyUplotnitel option:selected").html();
 		// var pen = '&pen=' + $( '.rakovina select' ).val();
-		var pen = '&pen=' + $('.rakovina option:selected').text();
+		var pen = '&pen=' + $('.rakovina option:selected').html();
 		// var doorLock = '&doorLock=' + $( '.zamok select' ).val();
-		var doorLock = '&doorLock=' + $('.zamok option:selected').text();
+		var doorLock = '&doorLock=' + $('.zamok option:selected').html();
 		furnituraNameStr = slidingMechanisms + synchronizationMechanism + runners + runnersCount + typeOfMountingRunners + lead + closers + coverStripForProfile + brushSeal + pen + doorLock;
 	} else if (furnituraSelect == 2 || furnituraSelect == 3) {
 		// var foldingMechanisms = '&foldingMechanisms=' + $( '.setSkladnyieMehanizmyi select' ).val();
-		var foldingMechanisms = '&foldingMechanisms=' + $('.setSkladnyieMehanizmyi option:selected').text();
+		var foldingMechanisms = '&foldingMechanisms=' + $('.setSkladnyieMehanizmyi option:selected').html();
 		// var loops = '&loops=' + $( '.petli select' ).val();
-		var loops = '&loops=' + $('.petli option:selected').text();
+		var loops = '&loops=' + $('.petli option:selected').html();
 		// var runners = '&runners=' + $( '.napravlyayuschie select' ).val();
-		var runners = '&runners=' + $('.napravlyayuschie option:selected').text();
+		var runners = '&runners=' + $('.napravlyayuschie option:selected').html();
 		// var typeOfMountingRunners = '&typeOfMountingRunners=' + $( '.vidKrepleniya select' ).val();
-		var typeOfMountingRunners = '&typeOfMountingRunners=' + $('.vidKrepleniya option:selected').text();
+		var typeOfMountingRunners = '&typeOfMountingRunners=' + $('.vidKrepleniya option:selected').html();
 		// var coverStripForProfile = '&coverStripForProfile=' + $( '.dekorativnayaPlankaDlyaProfilya select' ).val();
-		var coverStripForProfile = '&coverStripForProfile=' + $('.dekorativnayaPlankaDlyaProfilya option:selected').text();
+		var coverStripForProfile = '&coverStripForProfile=' + $('.dekorativnayaPlankaDlyaProfilya option:selected').html();
 		// var brushSeal = '&brushSeal=' + $( '.schetochnyiyUplotnitel select' ).val();
-		var brushSeal = '&brushSeal=' + $('.schetochnyiyUplotnitel option:selected').text();
+		var brushSeal = '&brushSeal=' + $('.schetochnyiyUplotnitel option:selected').html();
 		// var pen = '&pen=' + $( '.rakovina select' ).val();
-		var pen = '&pen=' + $('.rakovina option:selected').text();
+		var pen = '&pen=' + $('.rakovina option:selected').html();
 		// var mountingPen = '&mountingPen=' + $( '.kreplenieRuchki select' ).val();
-		var mountingPen = '&mountingPen=' + $('.kreplenieRuchki option:selected').text();
+		var mountingPen = '&mountingPen=' + $('.kreplenieRuchki option:selected').html();
 		// var doorLock = '&doorLock=' + $( '.zamokSkladnyie select' ).val();
-		var doorLock = '&doorLock=' + $('.zamokSkladnyie option:selected').text();
+		var doorLock = '&doorLock=' + $('.zamokSkladnyie option:selected').html();
 		furnituraNameStr = foldingMechanisms + loops + runners + typeOfMountingRunners + coverStripForProfile + brushSeal + pen + mountingPen + doorLock;
 	} else if (furnituraSelect == 4) {
 		// var legs = '&legs=' + $( '.nozhki select' ).val();
-		var legs = '&legs=' + $('.nozhki option:selected').text();
+		var legs = '&legs=' + $('.nozhki option:selected').html();
 		// var stands = '&stands=' + $( '.stoyki select' ).val();
-		var stands = '&stands=' + $('.stoyki option:selected').text();
+		var stands = '&stands=' + $('.stoyki option:selected').html();
 		// var typeOfConnectionPaintings = '&typeOfConnectionPaintings=' + $( '.tipSoedineniyaPoloten select' ).val();
-		var typeOfConnectionPaintings = '&typeOfConnectionPaintings=' + $('.tipSoedineniyaPoloten option:selected').text();
+		var typeOfConnectionPaintings = '&typeOfConnectionPaintings=' + $('.tipSoedineniyaPoloten option:selected').html();
 		furnituraNameStr = legs + stands + typeOfConnectionPaintings;
 	}
 	////////////////////////////////////////////////////////////////////////////
@@ -205,6 +205,69 @@ $( '.sendGet' ).click(function () {
 		priceProfilePaintingStr = priceProfilePaintingStr + '&priceProfilePaintingPrice-' + j + '=' + $('*[data-id=' + j + ']').attr('data-decor-price');
 	}
 	////////////////////////////////////////////////////////////////////////////
+
+
+	var m = [];
+	var m2 = [];
+	var TOTAL_PAINTING = parseInt($('#TOTAL_PAINTING_ID').val());
+	if (isNaN(TOTAL_PAINTING)){
+		TOTAL_PAINTING = 0;
+	}
+	// =
+	// - Создали внутренние массивы
+	if (TOTAL_PAINTING > 1){
+		for (i = 0; i <= TOTAL_PAINTING-1; i++) {
+			m[i] = new Array(3);
+		}
+	}
+	// =
+	// - Массив со всеми данными
+	for (var i = 0; i < TOTAL_PAINTING; i++) {
+		var karkasName = $('*[data-id="' + (i + 1 ) + '"]').attr('data-karkas-name');
+		if (karkasName == 'Optimax2') {
+			selectedKarkas = selectedKarkas + 'OptimaхTwo';
+		} else if (karkasName == 'Statusx1') {
+			selectedKarkas = selectedKarkas + 'StatusхOne';
+		} else if (karkasName == 'Statusx2') {
+			selectedKarkas = selectedKarkas + 'StatusхTwo';
+		} else {
+			selectedKarkas = selectedKarkas + $('*[data-id=' + j + ']').find('.karkas-name').text();
+		}
+
+		m[i][0] = selectedKarkas;
+		m[i][1] = checkTheErrorNumber( $('*[data-id="' + (i + 1 ) + '"]').attr('data-karkas-price') );
+		m[i][2] = checkTheErrorNumber(  $('*[data-id="' + (i + 1 ) + '"]').attr('data-width') ) + checkTheErrorNumber( $('*[data-id="' + (i + 1 ) + '"]').attr('data-height') );
+	}
+	for (var i = 0; i < TOTAL_PAINTING; i++) {
+		if (m2.length == 0){
+			m2.push(m[i][0]);
+			m2.push(m[i][1]);
+			m2.push(m[i][2]);
+		}
+		else {
+			var status = true;
+			var price = 0;
+			for (var j = 0; j < m2.length; j++) {
+				if (m2[j] == m[i][0]) {
+					for (var g = m2.length; g >= 0; g--) {
+						if (m2[g] == m[i][0]){
+							m2[j+1] = m2[j+1] + m[i][1]
+							m2[j+2] = m2[j+2] + m[i][2]
+						}
+					}
+					status = false;
+				}
+			}
+			if (status == true){
+				m2.push(m[i][0]);
+				m2.push(m[i][1]);
+				m2.push(m[i][2]);
+			}
+		}
+	}
+
+
+
 	var url = '?furnitura-select=' + furnituraSelect +
 		'&Allheight=' + Allheight +
 		'&Allwidth=' + Allwidth +
@@ -237,21 +300,23 @@ $( '.sendGet' ).click(function () {
 		furnituraElPrice +
 		priceProfilePaintingStr +
 		nameProfilePicturePainting +
-		'&selectedKarkas=' + selectedKarkas;
+		'&selectedKarkas=' + m2;
 	url = urlLit(url, 0)
 	url = url.replace(/[%C2%]/g, "");
 	window.open('http://fasts-like.com/html2pdf.php' + url, '_blank');
 });
 
 // траслитерация url
-function urlLit(w,v) {
-	var tr='a b v g d e ["zh","j"] z i y k l m n o p r s t u f h c ch sh ["shh","shch"] ~ y ~ e yu ya ~ ["jo","e"]'.split(' ');
-	var ww=''; w=w.toLowerCase().replace(/ /g,'-');
-	for(i=0; i<w.length; ++i) {
-		cc=w.charCodeAt(i); ch=(cc>=1072?tr[cc-1072]:w[i]);
-		if(ch.length<3) ww+=ch; else ww+=eval(ch)[v];
+function urlLit(w, v) {
+	var tr = 'a b v g d e ["zh","j"] z i y k l m n o p r s t u f h c ch sh ["shh","shch"] ~ y ~ e yu ya ~ ["jo","e"]'.split(' ');
+	var ww = '';
+	w = w.toLowerCase().replace(/ /g, '-');
+	for (i = 0; i < w.length; ++i) {
+		cc = w.charCodeAt(i);
+		ch = (cc >= 1072 ? tr[cc - 1072] : w[i]);
+		if (ch.length < 3) ww += ch; else ww += eval(ch)[v];
 	}
-	return(ww.replace(/~/g,''));
+	return (ww.replace(/~/g, ''));
 }
 
 
